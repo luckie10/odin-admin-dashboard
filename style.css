@@ -48,7 +48,7 @@
 
 .nav {
 	display: grid;
-	row-gap: 15px;
+	row-gap: 20px;
 }
 
 .nav-item {
@@ -144,4 +144,37 @@
 
 .main-content {
 	background-color: var(--main-bg-color);
+	padding: 20px;
+}
+
+.projects > h3 {
+	margin-bottom: 10px;
+}
+
+.card-container {
+	display: grid;
+	gap: 20px;
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.card {
+	height: 275px;
+	display: grid;
+	grid-template-rows: min-content 1fr min-content;
+	background-color: var(--sidebar-fg-color);
+	padding: 30px 20px;
+	border-radius: 5px;
+	border-left: 5px solid orange;
+}
+
+.card p {
+	color: grey;
+	overflow: hidden;
+}
+
+.card-buttons {
+	display: grid;
+	column-gap: 20px;
+	justify-content: right;
+	grid-template-columns: repeat(3, 24px);
 }
