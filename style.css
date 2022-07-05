@@ -216,3 +216,35 @@
 	font-size: .8rem;
 	overflow: hidden;
 }
+
+.trending-container > h3 {
+	margin-bottom: 10px;
+}
+
+.trending {
+	display: grid;
+	gap: 20px;
+	background-color: var(--sidebar-fg-color);
+	padding: 20px;
+	border-radius: 5px;
+}
+
+.trending-item {
+	display: grid;
+	grid-template-rows: 1fr 1fr;
+	grid-template-columns: 40px 1fr;
+	column-gap: 10px;
+	font-size: .9rem;
+}
+
+.trending-item > svg {
+	grid-row: span 2;
+}
+
+.trending-item .user {
+	font-weight: bold;
+}
+
+.trending-item .project {
+	color: grey;
+}
